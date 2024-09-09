@@ -7,7 +7,13 @@ La competicion del modelo que escogi consiste en la identificacion de los digito
 instrucciones para ejecutar el notebook de la fase 1:
 <br>
 Clonar el repositorio: git clone <url_del_repositorio>
-Importar e instalar las librería que el entorno requiere las cuales estan en las primeras lineas de comando de codigo.
+Importar e instalar las librerías de numpy y pandas que el entorno requiere las cuales estan en las primeras lineas de comando de codigo.
+<br>
+Ejecutar el codigo linea por linea para evitar errores
+<br>
+Hacer importaciones de "keras"
+<br>
+despues de usar todas las Lineas realizar las pruebas al modelo predictivo y observar los resultados, el codigo esta muy explicado debido a que es para beginners
 <br>
 Realizado por el estudiantes: 
 <br>
