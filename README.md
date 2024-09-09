@@ -8,6 +8,7 @@ instrucciones para ejecutar el notebook de la fase 1:
 <br>
 Clonar el repositorio: git clone <url_del_repositorio>
 Importar e instalar las librería que el entorno requiere las cuales estan en las primeras lineas de comando de codigo.
+<br>
 Realizado por el estudiantes: 
 <br>
 León Mateo Velez Gonzalez - 1216728793 - Ingenieria de Sistemas
