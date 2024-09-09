@@ -6,7 +6,11 @@ La competicion del modelo que escogi consiste en la identificacion de los digito
 <br>
 instrucciones para ejecutar el notebook de la fase 1:
 <br>
-Clonar el repositorio: git clone <url_del_repositorio>
+Abrir contendor llamado "fase-1"
+<br>
+en el encontras el archivo llamado "selectedNotebook.ipynb" el cual contiene el modelo predictivo para la revision de la fase 1.
+<br>
+Clonar el repositorio: git clone <url_del_repositorio> 
 Importar e instalar las librerías de numpy y pandas que el entorno requiere las cuales estan en las primeras lineas de comando de codigo.
 <br>
 Ejecutar el codigo linea por linea para evitar errores
