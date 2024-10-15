@@ -16,9 +16,9 @@ docker build -t imagenlt .
 
 para Linux docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
 
-Para Windows docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
+Para Windows docker run -v %CD%/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
 
-El contenedor está montando el volumen output en el directorio /usr/src/app/resultados, lo que asegura que cualquier archivo creado o modificado en esa ruta persista en tu sistema anfitrión.
+El contenedor está montando el volumen de salida se encuentra en el directorio /usr/src/app/resultados, lo que asegura que cualquier archivo creado o modificado en esa ruta persista en tu sistema, para que tenga la posibilidad de visualizar los cambios.
 
 ## Ejecutar predict.py como volumen de docker:
 
