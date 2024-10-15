@@ -28,7 +28,9 @@ train.py: que dado un conjunto de entrenamiento (datos más etiquetas), entrene 
 *Ejecutar el comando:*
 
 docker build -t imagenlt .
+
 con este comando se construye la imagen yo le sugiero el nombre "imagenlt"
+
 ## En Windows:
 ## Ejecutar train.py como volumen en docker:
 
