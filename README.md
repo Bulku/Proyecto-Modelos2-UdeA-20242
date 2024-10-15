@@ -17,7 +17,8 @@ Ejecutar el codigo linea por linea para evitar errores
 <br>
 despues de usar todas las Lineas realizar las pruebas al modelo predictivo y observar los resultados, el codigo esta muy explicado debido a que es para beginners
 <br>
-## Instrucciones Fase2:
+## Construir la imagen en docker:
+*Ejecutar el comando:* 
 En esta fase del proyecto es donde se configura el o los contenedores generados con Docker con todas las librerías necesarias para correr el modelo, de esta manera se busca asegurar que cualquier persona que siga estos pasos pueda generar y obtener las predicciones.
 
 El contenedor tiene dos scripts:
