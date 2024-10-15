@@ -1,5 +1,6 @@
 # Instrucciones  Fase 2:
 En esta fase del proyecto es donde se configura el o los contenedores generados con Docker con todas las librerías necesarias para correr el modelo, de esta manera se busca asegurar que cualquier persona que siga estos pasos pueda generar y obtener las predicciones.
+Como se ve en el contenido estan el archivo Dockerfile, el README, predict.py y train.py, sumado a esto esta la carpeta resultados, todo esto es para que se conserve la estructura del proyecto realizado en visual studio code.
 
 ## El contenedor tiene dos scripts:
 
