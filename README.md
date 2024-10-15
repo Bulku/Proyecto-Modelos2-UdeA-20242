@@ -15,6 +15,7 @@ despues de usar todas las Lineas realizar las pruebas al modelo predictivo y obs
 
   
 # Instrucciones  Fase 2:
+Abrir contenedor llamado fase-2
 En esta fase del proyecto es donde se configura el o los contenedores generados con Docker con todas las librerías necesarias para correr el modelo, de esta manera se busca asegurar que cualquier persona que siga estos pasos pueda generar y obtener las predicciones.
 
 ## El contenedor tiene dos scripts:
