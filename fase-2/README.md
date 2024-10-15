@@ -14,14 +14,16 @@ docker build -t imagenlt .
 # En Windows:
 ## Ejecutar train.py como volumen en docker:
 
-para Linux: docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
-Para Windows: docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
+para Linux docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
+
+Para Windows docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python train.py --data_file /usr/src/app/resultados/train.csv --model_file /usr/src/app/resultados/modelo.pkl --overwrite_model
 
 El contenedor está montando el volumen output en el directorio /usr/src/app/resultados, lo que asegura que cualquier archivo creado o modificado en esa ruta persista en tu sistema anfitrión.
 
 ## Ejecutar predict.py como volumen de docker:
 
-Para windows: docker run -v %CD%/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/prediccioneslt.csv
-Para Linux: docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/prediccioneslt.csv
+Para windows docker run -v %CD%/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/prediccioneslt.csv
+
+Para Linux docker run -v ${PWD}/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/prediccioneslt.csv
 
 Cada vez que ejecutes los scripts train.py o predict.py, los resultados se almacenarán en ./resultados en tu sistema local.
