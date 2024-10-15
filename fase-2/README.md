@@ -1,4 +1,4 @@
-En esta fase del proyecto se configura un contenedor de Docker con todas las librerías necesarias para correr el modelo.
+En esta fase del proyecto es donde se configura el o los contenedores generados con Docker con todas las librerías necesarias para correr el modelo, de esta manera se busca asegurar que cualquier persona que siga estos pasos pueda generar y obtener las producciones
 
 El contenedor tiene dos scripts:
 
@@ -20,6 +20,6 @@ El contenedor está montando el volumen output en el directorio /usr/src/app/res
 
 ## Ejecutar predict.py como volumen de docker:
 
-docker run -v $PWD/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/ppredictions.csv
+docker run -v %CD%/resultados:/usr/src/app/resultados imagenlt python predict.py --input_file /usr/src/app/resultados/test.csv --model_file /usr/src/app/resultados/modelo.pkl --predictions_file /usr/src/app/resultados/prediccioneslt.csv
 
 Cada vez que ejecutes los scripts train.py o predict.py, los resultados se almacenarán en ./resultados en tu sistema local.
